@@ -1,14 +1,25 @@
-/* #1 */
-INSERT INTO artist ( name ) VALUES ( 'artist name' );
+-- insert into artist (
+--   name
+-- ) 
+-- values (
+--   'NF'
+-- ), (
+--   'Logic'
+-- ), (
+--   'KNOWN'
+-- )
 
-/* #2 */
-SELECT * FROM artist ORDER BY name DESC LIMIT 10;
+-- select * from artist
+-- order by name;
 
-/* #3 */
-SELECT * FROM artist ORDER BY name ASC LIMIT 5;
+--  select * from artist
+--  order by name desc limit 10;
 
-/* #4 */
-SELECT * FROM artist WHERE name LIKE 'Black%';
+-- select * from artist
+-- order by name limit 5;
 
-/* #5 */
-SELECT * FROM artist WHERE name LIKE '%Black%';
+-- select * from artist
+-- where name like 'Black%';
+
+-- select * from artist
+-- where name like '%Black%';

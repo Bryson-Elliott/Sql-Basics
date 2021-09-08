@@ -1,14 +1,17 @@
-/* #1 */
-SELECT first_name, last_name FROM employee WHERE city = 'Calgary';
+-- select first_name, last_name, city from employee
+-- where city = 'Calgary';
 
-/* #2 */
-SELECT MAX(birth_date) from employee;
+-- select * from employee
+-- order by birth_date desc limit 1;
 
-/* #3 */
-SELECT MIN(birth_date) from employee;
+-- select * from employee
+-- order by birth_date limit 1;
 
-/* #4 */
-SELECT * FROM employee WHERE reports_to = 2;
+-- select employee_id from employee
+-- where first_name = 'Nancy' and last_name = 'Edwards';
+ 
+-- select * from employee
+-- where reports_to = 2;
 
-/* #5 */
-SELECT COUNT(*) FROM employee WHERE city = 'Lethbridge';
+-- select count(*) from employee
+-- where city = 'Lethbridge';

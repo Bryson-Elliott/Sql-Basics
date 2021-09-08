@@ -1,18 +1,43 @@
-/* #1 */
-CREATE TABLE orders ( order_id SERIAL PRIMARY KEY, person_id INTEGER, product_name VARCHAR(200), product_price NUMERIC, quantity INTEGER );
+-- create table orders (
+-- 	orders_id serial primary key,
+--   person_id serial,
+--   product_name varchar(50),
+-- 	product_price integer,
+-- 	quantity integer
+-- );
 
-/* #2 */
-INSERT INTO orders ( person_id, product_name, product_price, quantity ) VALUES ( 0, 'Product', 12.50, 2 );
+-- insert into orders (
+-- 	product_name,
+--   product_price,
+--   quantity
+-- )
+-- values (
+-- 	'Kickstart',
+--   2,
+--   8
+-- ), (
+-- 	'Waters',
+--   1,
+--   32
+-- ), (
+-- 	'Dr Pepper',
+--   4,
+--   3
+-- ), (
+-- 	'Doritos',
+--   6,
+--   2
+-- ), (
+--   'Bread',
+--   5,
+--   1
+-- );
 
-/* #3 */
-SELECT * FROM orders;
+-- select * from orders;
 
-/* #4 */
-SELECT SUM(quantity) FROM orders;
+-- select sum(quantity) as total_products_ordered from orders;
 
-/* #5 */
-SELECT SUM(product_price * quantity) FROM orders;
+-- select sum(product_price*quantity) from orders;
 
-/* #6 */
-/* The value of person_id depends on what IDs you used. Use a valid ID from your table */
-SELECT SUM(product_price * quantity) FROM orders WHERE person_id = 0;
+-- select sum(product_price*quantity) from orders 
+-- where person_id = 2;

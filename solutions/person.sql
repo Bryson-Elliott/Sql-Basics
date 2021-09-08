@@ -1,41 +1,84 @@
-/* #1 */
-CREATE TABLE person ( person_id SERIAL PRIMARY KEY, name VARCHAR(200), age INTEGER, height INTEGER, city VARCHAR(200), favorite_color VARCHAR(200));
+-- CREATE TABLE person( 
+--  person_id SERIAL PRIMARY KEY,
+--  name VARCHAR(50), 
+--  age INTEGER,
+--  height INTEGER, 
+--  city VARCHAR(100), 
+--  favorite_color VARCHAR(100)
+-- );
+-- INSERT INTO person (
+--   name,
+--   age,
+--   height,
+--   city,
+--   favorite_color
+--  )
+--  VALUES (
+--    'Bryson Elliott',
+--    21,
+--    175,
+--    'Mapleton',
+--    'Blue'
+--  ), (
+--    'Taylor Elliott',
+--    21,
+--    162,
+--    'Mapleton',
+--    'Green'
+--  ), (
+--    'Andrew Bean',
+--    20,
+--    175,
+--    'Provo',
+--    'Red'
+--  ), (
+--    'Gage Stilson',
+--    20,
+--    195,
+--    'Herriman',
+--    'Black'
+--  ), (
+--    'Preston Quittner',
+--    20, 
+--    187,
+--    'Alaska',
+--    'Black'
+--  );
 
-/* #2 */
-INSERT INTO person ( name, age, height, city, favorite_color ) VALUES ( 'First Last', 21, 182, 'City', 'Color' );
+-- select * from person;
 
-/* #3 */
-SELECT * FROM person ORDER BY height DESC;
+-- select * from person
+-- order by height desc;
 
-/* #4 */
-SELECT * FROM person ORDER BY height ASC;
+-- select * from person
+-- order by height;
 
-/* #5 */
-SELECT * FROM person ORDER BY age DESC;
+-- select * from person
+-- order by age desc;
 
-/* #6 */
-SELECT * FROM person WHERE age > 20;
+-- select * from person
+-- where age > 20;
 
-/* #7 */
-SELECT * FROM person WHERE age = 18;
+-- select * from person
+-- where age = 18;
 
-/* #8 */
-SELECT * FROM person WHERE age < 20 OR age > 30;
+-- select * from person
+-- where age < 20 or age > 30;
 
-/* #9 */
-SELECT * FROM person WHERE age != 27;
+-- select * from person
+-- where age != 27;
 
-/* #10 */
-SELECT * FROM person WHERE favorite_color != 'red';
+-- select * from person 
+-- where favorite_color != 'Red'
 
-/* #11 */
-SELECT * FROM person WHERE favorite_color != 'red' AND favorite_color != 'blue';
+-- select * from person
+-- where favorite_color != 'Red' and favorite_color != 'Blue'
 
-/* #12 */
-SELECT * FROM person WHERE favorite_color = 'orange' OR favorite_color = 'green';
+-- select * from person
+-- where favorite_color = 'Green' or favorite_color = 'Orange';
 
-/* #13 */
-SELECT * FROM person WHERE favorite_color IN ( 'orange', 'green', 'blue' );
+-- select * from person
+-- where favorite_color in ('Green', 'Blue', 'Orange');
 
-/* #14 */
-SELECT * FROM person WHERE favorite_color IN ( 'yellow', 'purple' )
+-- select * from person
+-- where favorite_color in ('Yellow', 'Purple');
